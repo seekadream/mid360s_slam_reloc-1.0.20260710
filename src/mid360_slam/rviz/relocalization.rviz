@@ -1,0 +1,82 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Views
+    Name: Views
+  - Class: rviz_common/Time
+    Name: Time
+Visualization Manager:
+  Class: ""
+  Displays:
+    # 地图点云
+    - Class: rviz_default_plugins/PointCloud2
+      Name: MapCloud
+      Topic: /map_cloud
+      Color Transformer: FlatColor
+      Color: 255; 255; 255
+      Size (Pixels): 2
+      Style: Points
+      Alpha: 0.5
+      Enabled: true
+    # 对齐后的实时点云
+    - Class: rviz_default_plugins/PointCloud2
+      Name: AlignedCloud
+      Topic: /aligned_cloud
+      Color Transformer: FlatColor
+      Color: 0; 255; 0
+      Size (Pixels): 3
+      Style: Points
+      Alpha: 0.8
+      Enabled: true
+    # 重定位位姿
+    - Class: rviz_default_plugins/PoseWithCovariance
+      Name: RelocalizationPose
+      Topic: /relocalization_pose
+      Color: 255; 0; 0
+      Shaft Length: 0.5
+      Shaft Radius: 0.05
+      Head Length: 0.2
+      Head Radius: 0.1
+      Enabled: true
+    # TF
+    - Class: rviz_default_plugins/TF
+      Name: TF
+      Show Axes: true
+      Show Arrows: true
+      Show Names: true
+      Enabled: true
+    # 网格
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Cell Size: 1.0
+      Color: 160; 160; 160
+      Plane: XY
+      Plane Cell Count: 20
+      Enabled: true
+  Global Options:
+    Background Color: 20; 20; 30
+    Default Light: true
+    Fixed Frame: map_origin
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/FocusCamera
+    - Class: rviz_default_plugins/Measure
+  Value: true
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 50
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
+      Pitch: 0.5
+      Yaw: 3.14159
+      Target Frame: <Fixed Frame>
+Window Geometry:
+  Height: 900
+  Width: 1400
+  X: 0
+  Y: 0

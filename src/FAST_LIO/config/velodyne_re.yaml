@@ -1,0 +1,55 @@
+/**:
+  ros__parameters:
+    common/lid_topic: "/livox/lidar"
+    common/imu_topic: "/livox/imu"
+    common/time_sync_en: false
+    common/time_offset_lidar_to_imu: 0.0
+
+    preprocess/lidar_type: 1
+    preprocess/scan_line: 4
+    preprocess/scan_rate: 10
+    preprocess/timestamp_unit: 3
+    preprocess/blind: 0.5
+
+    mapping/acc_cov: 0.1
+    mapping/gyr_cov: 0.1
+    mapping/b_acc_cov: 0.0001
+    mapping/b_gyr_cov: 0.0001
+    mapping/fov_degree: 360.0
+    mapping/det_range: 100.0
+    mapping/extrinsic_est_en: true
+    mapping/extrinsic_T: [-0.011, -0.02329, 0.04412]
+    mapping/extrinsic_R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+
+    publish/path_en: false
+    publish/scan_publish_en: true
+    publish/dense_publish_en: true
+    publish/scan_bodyframe_pub_en: true
+
+    pcd_save/pcd_save_en: false
+    pcd_save/interval: -1
+
+    globalmap_dir: "/home/pi/mid360_map/map.pcd"
+
+    NDT/res: 1.0
+    NDT/step_size: 0.1
+    NDT/trans_eps: 0.01
+    NDT/max_iter: 50
+
+    frame_filter: "voxel_filter"
+
+    box_filter_size: [-150.0, 150.0, -150.0, 150.0, -150.0, 150.0]
+    local_map_filter: "voxel_filter"
+    global_map_filter: "voxel_filter"
+
+    voxel_filter/global_map: [0.2, 0.2, 0.2]
+    voxel_filter/local_map: [0.2, 0.2, 0.2]
+    voxel_filter/frame: [0.4, 0.4, 0.4]
+
+    init_threshold: 2.0
+    ininit_resolution_rot: 1.0
+    ininit_resolution_dis: 0.05
+
+    relocal_publish/relocal_odom_en: true
+    relocal_publish/relocal_scan_en: true
+    relocal_publish/localmap_en: true

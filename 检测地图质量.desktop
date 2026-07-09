@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=检测地图质量
+Comment=检测 PCD 地图是否适合用于重定位
+Exec=bash -c "cd /home/b1/mid360_slam_ws && bash scripts/check_map_quality.sh; read -p '按回车退出...'"
+Icon=applications-engineering
+Terminal=true
+Categories=Development;Robotics;
+StartupNotify=true

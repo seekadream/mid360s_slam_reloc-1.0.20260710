@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=MID360 SLAM 建图
+Comment=启动 MID360 SLAM 建图定位系统
+Exec=bash -c "cd /home/b1/mid360_slam_ws && source /opt/ros/humble/setup.bash && source install/setup.bash && bash start.sh"
+Icon=utilities-terminal
+Terminal=true
+Categories=Development;Robotics;
+StartupNotify=true

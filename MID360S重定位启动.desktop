@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=MID360S 重定位启动
+Comment=使用已建好的PCD地图进行NDT重定位
+Exec=bash -c "cd /home/b1/Desktop/lidarloc_project && bash start_relocalization.sh"
+Icon=applications-engineering
+Terminal=true
+Categories=Development;Robotics;
+StartupNotify=true

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=MID360 SLAM 建图 (20cm过滤)
+Comment=过滤20cm内近点，只建远距离地图
+Exec=bash -c "cd /home/b1/Desktop/lidarloc_project && bash start_mapping_20cm.sh"
+Icon=applications-engineering
+Terminal=true
+Categories=Development;Robotics;
+StartupNotify=true

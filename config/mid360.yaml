@@ -1,0 +1,45 @@
+/**:
+  ros__parameters:
+    common.lid_topic: "/livox/lidar"
+    common.imu_topic: "/livox/imu"
+    common.time_sync_en: false
+    common.time_offset_lidar_to_imu: 0.0
+    preprocess.lidar_type: 1
+    preprocess.scan_line: 6
+    preprocess.blind: 4
+    preprocess.timestamp_unit: 2
+    preprocess.scan_rate: 10
+    mapping.acc_cov: 100.0
+    mapping.gyr_cov: 100.0
+    mapping.b_acc_cov: 1.0
+    mapping.b_gyr_cov: 1.0
+    mapping.fov_degree: 90
+    mapping.det_range: 450.0
+    mapping.extrinsic_est_en: false
+    mapping.extrinsic_T: [0.04165, 0.02326, -0.0284]
+    mapping.extrinsic_R: [1, 0, 0, 0, 1, 0, 0, 0, 1]
+    publish.path_en: true
+    publish.scan_publish_en: true
+    publish.dense_publish_en: true
+    publish.scan_bodyframe_pub_en: false
+    pcd_save.pcd_save_en: false
+    pcd_save.interval: 100
+    point_filter_num: 2
+    max_iteration: 4
+    filter_size_corner: 0.5
+    filter_size_surf: 0.5
+    filter_size_map: 0.5
+    cube_side_length: 200.0
+    feature_extract_enable: false
+    map_file_path: "/home/b1/mid360_map/map.pcd"
+    globalmap_dir: "/home/b1/mid360_map/map.pcd"
+    init_threshold: 0.15
+    ininit_resolution_dis: 0.05
+    ininit_resolution_rot: 1.0
+    box_filter_size: [-100.0, 100.0, -100.0, 100.0, -100.0, 100.0]
+    global_map_filter: "voxel_filter"
+    local_map_filter: "voxel_filter"
+    frame_filter: "voxel_filter"
+    voxel_filter/global_map: [0.5, 0.5, 0.5]
+    voxel_filter/local_map: [0.1, 0.1, 0.1]
+    voxel_filter/frame: [0.1, 0.1, 0.1]
